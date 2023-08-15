@@ -23,6 +23,7 @@ class CurrencyTextView: AppCompatTextView {
             return value?.toInt() ?: 2
         }
 
+
     private val scale
         get() = Math.pow(10.0, fraction.toDouble()).toInt()
 

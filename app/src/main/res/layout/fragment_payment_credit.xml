@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <TextView
+        app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/paymentCreditTitle"
         style="@style/TextAppearance.AppCompat.Title"
         android:layout_width="match_parent"
@@ -46,7 +47,7 @@
     <com.softmed.payment.helpers.CurrencyEditText
         android:id="@+id/paymentCreditPaymentValue"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_height="48dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:inputType="numberDecimal"

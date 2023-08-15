@@ -22,7 +22,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/clientNameEdit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:hint="@string/client_name"
                 android:inputType="textCapWords"
                 android:maxLines="1"
@@ -36,7 +36,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/clientLastNameEdit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:hint="@string/cliente_last_name"
                 android:inputType="textCapWords"
                 android:maxLines="1"
@@ -50,7 +50,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/clientNitEdit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:hint="@string/cliente_nit"
                 android:inputType="text"
                 android:maxLines="1"
@@ -64,7 +64,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/clientEmailEdit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:hint="@string/cliente_email"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
@@ -78,7 +78,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/clientPhoneEdit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:hint="@string/cliente_phone"
                 android:inputType="phone"
                 android:maxLines="1"
@@ -92,7 +92,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/clientDirectionEdit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:hint="@string/cliente_address"
                 android:inputType="textMultiLine" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -104,7 +104,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/clientBirthDay"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:hint="@string/cliente_birthday"
                 android:inputType="textMultiLine" />
         </com.google.android.material.textfield.TextInputLayout>

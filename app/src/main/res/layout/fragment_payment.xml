@@ -6,6 +6,7 @@
     tools:context="com.softmed.payment.PaymentFragment">
 
     <TextView
+        app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/paymentMethodTitle"
         style="@style/TextAppearance.AppCompat.Title"
         android:layout_width="match_parent"
@@ -54,7 +55,7 @@
     <Spinner
         android:id="@+id/paymentMethodSpinner"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -80,7 +81,7 @@
     <com.softmed.payment.helpers.CurrencyEditText
         android:id="@+id/paymentCash"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"

@@ -198,6 +198,7 @@
             app:layout_constraintTop_toBottomOf="@+id/invoiceInfo">
 
             <androidx.recyclerview.widget.RecyclerView
+                app:layout_constraintTop_toTopOf="parent"
                 android:id="@+id/rvNewSaleItems"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -216,6 +217,7 @@
             app:layout_constraintTop_toBottomOf="@+id/fragItems">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                app:layout_constraintTop_toTopOf="parent"
                 android:id="@+id/fragPaymentInfoTotales"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

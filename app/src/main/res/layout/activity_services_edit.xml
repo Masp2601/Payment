@@ -16,7 +16,7 @@
         <EditText
             android:id="@+id/serviceNameEdit"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:inputType="textCapWords"
             android:selectAllOnFocus="true"
             android:hint="@string/service_name"
@@ -32,7 +32,7 @@
         <com.softmed.payment.helpers.CurrencyEditText
             android:id="@+id/servicePriceEdit"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:inputType="numberDecimal"
             android:selectAllOnFocus="true"
             android:hint="@string/service_price"
@@ -49,7 +49,7 @@
         <EditText
             android:id="@+id/serviceIvaEdit"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:inputType="numberDecimal"
             android:selectAllOnFocus="true"
             android:hint="@string/service_iva"
@@ -65,7 +65,7 @@
         <EditText
             android:id="@+id/serviceDiscountEdit"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:inputType="numberDecimal"
             android:selectAllOnFocus="true"
             android:hint="@string/service_discount"

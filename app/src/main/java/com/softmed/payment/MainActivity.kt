@@ -68,7 +68,7 @@ class MainActivity : BaseActivity(), AnkoLogger {
             }
         }
 
-        val dispatcher = FirebaseJobDispatcher(GooglePlayDriver(applicationContext))
+        /*val dispatcher = FirebaseJobDispatcher(GooglePlayDriver(applicationContext))
 
         val newJob = dispatcher.newJobBuilder()
                 .setService(BirthdayService::class.java)
@@ -80,7 +80,7 @@ class MainActivity : BaseActivity(), AnkoLogger {
                 .setRetryStrategy(RetryStrategy.DEFAULT_EXPONENTIAL)
                 .build()
 
-        dispatcher.schedule(newJob)
+        dispatcher.schedule(newJob)*/
     }
 
     override fun onResume() {
@@ -136,9 +136,9 @@ class MainActivity : BaseActivity(), AnkoLogger {
 
         openDateValue.text = DateTimeHelper.dateToString(dateToShow, "MMMM dd, yyyy")
         totalBillsToday.text = "${getTotalBillsToday()}"
-        totalInvoicedDay.setText(getTotalInvoicedToday())
-        totalInCreditDay.setText(getTotalInCreditToday())
-        totalInCreditDepositDay.setText(getTotalInCreditDepositToday())
+        totalInvoicedDay.text = "${getTotalInvoicedToday()}"
+        totalInCreditDay.text = "${getTotalInCreditToday()}"
+        totalInCreditDepositDay.text = "${getTotalInCreditDepositToday()}"
 
         if (isDayOpen()) {
             val icon = ContextCompat.getDrawable(this, R.drawable.ic_lock_open_black_24dp)
@@ -172,8 +172,8 @@ class MainActivity : BaseActivity(), AnkoLogger {
         runOnUiThread {
             totalInvoicedDay.text = totalDay.toString()
             totalBillsToday.text = totalBills.toString()
-            totalInCreditDay.setText(totalInCredit)
-            totalInCreditDepositDay.setText(totalInCreditDeposit)
+            totalInCreditDay.text = totalInCredit.toString()
+            totalInCreditDepositDay.text = totalInCreditDeposit.toString()
         }
     }
 

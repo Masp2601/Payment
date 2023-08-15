@@ -18,6 +18,7 @@
         android:layout_marginBottom="20dp">
 
         <Toolbar
+            app:layout_constraintTop_toTopOf="parent"
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">

@@ -71,7 +71,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/promotionCode"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
                     android:hint="@string/prompt_promotion_code"
                     android:inputType="text"
                     android:maxLines="1"

@@ -6,6 +6,7 @@
     tools:context="com.softmed.payment.ServiceEditFragment">
 
     <TextView
+        app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/dialogTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,7 +31,7 @@
             <com.softmed.payment.helpers.CurrencyEditText
                 android:id="@+id/servicePriceEdit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:inputType="numberDecimal"
                 android:selectAllOnFocus="true"
                 android:hint="@string/service_price"/>
@@ -45,7 +46,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/serviceDiscountEdit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:inputType="numberDecimal"
                 android:selectAllOnFocus="true"
                 android:hint="@string/service_discount"/>
@@ -60,7 +61,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/serviceAmountEdit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:inputType="numberDecimal"
                 android:selectAllOnFocus="true"
                 android:hint="@string/service_amount"/>

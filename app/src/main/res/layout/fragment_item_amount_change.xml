@@ -27,7 +27,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/fmAmountValue"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:inputType="numberDecimal"
             android:selectAllOnFocus="true"
             android:hint="@string/new_sale_fragment_amount_input_hint"/>

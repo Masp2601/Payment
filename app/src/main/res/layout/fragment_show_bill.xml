@@ -52,6 +52,7 @@
         app:layout_constraintRight_toRightOf="parent"/>
 
     <TextView
+        app:layout_constraintStart_toStartOf="parent"
         android:id="@+id/ticketDateText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -6,6 +6,7 @@
     android:padding="20dp">
 
     <ProgressBar
+        app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/progressBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

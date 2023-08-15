@@ -16,6 +16,7 @@
         android:layout_height="match_parent">
 
         <androidx.cardview.widget.CardView
+            app:layout_constraintTop_toTopOf="parent"
             android:id="@+id/cardViewMain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">

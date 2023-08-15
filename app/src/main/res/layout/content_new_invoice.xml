@@ -9,6 +9,7 @@
     tools:showIn="@layout/activity_new_sale">
 
     <ListView
+        app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/addInvoiceListService"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

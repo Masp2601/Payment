@@ -7,6 +7,7 @@
     tools:context="com.softmed.payment.ServiceAddFragment">
 
     <TextView
+        app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/titleNewService"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,6 +24,7 @@
         app:layout_constraintTop_toBottomOf="@id/titleNewService">
 
         <TextView
+            app:layout_constraintTop_toTopOf="parent"
             android:id="@+id/serviceNameText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,6 +39,7 @@
             android:selectAllOnFocus="true"
             app:layout_constraintTop_toBottomOf="@id/serviceNameText"/>
         <TextView
+            app:layout_constraintStart_toStartOf="parent"
             android:id="@+id/servicePriceText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,6 +54,7 @@
             android:selectAllOnFocus="true"
             app:layout_constraintTop_toBottomOf="@id/servicePriceText"/>
         <TextView
+            app:layout_constraintStart_toStartOf="parent"
             android:id="@+id/serviceIvaText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -65,6 +69,7 @@
             android:selectAllOnFocus="true"
             app:layout_constraintTop_toBottomOf="@id/serviceIvaText"/>
         <TextView
+            app:layout_constraintStart_toStartOf="parent"
             android:id="@+id/serviceDiscountText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

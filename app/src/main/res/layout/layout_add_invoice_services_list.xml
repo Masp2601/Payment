@@ -9,7 +9,7 @@
     <CheckBox
         android:id="@+id/chkServiceName"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:textSize="16sp"

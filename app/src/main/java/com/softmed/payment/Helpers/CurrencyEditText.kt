@@ -27,6 +27,11 @@ class CurrencyEditText : AppCompatEditText, AnkoLogger {
             val value = PreferenceManager.getDefaultSharedPreferences(context)
                     .getString(context.getString(R.string.pref_key_currency_digits),
                             context.getString(R.string.pref_default_currency_digits))
+            if (value.toString().trim() >= 0.toString()) {
+                value?.toInt() ?: 2
+            } else {
+                value?.toInt() ?: 0
+            }
             return value?.toInt() ?: 2
         }
 
@@ -71,7 +76,7 @@ class CurrencyEditText : AppCompatEditText, AnkoLogger {
         return format;
     }
 
-    private fun getCurrencySymbol(): String = getCurrencyFormat().currency.symbol
+    private fun getCurrencySymbol(): String = getCurrencyFormat().currency!!.symbol
 
     private fun getCursorPosition(formatted: String): Int =
             if (formatted.indexOf(getCurrencySymbol()) == 0) formatted.length

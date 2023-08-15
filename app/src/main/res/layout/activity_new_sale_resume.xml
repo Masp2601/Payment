@@ -28,7 +28,8 @@
                 style="@style/TextAppearance.AppCompat.Title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/bills_client_name" />
+                android:text="@string/bills_client_name"
+                tools:ignore="MissingConstraints" />
 
             <Button
                 android:id="@+id/btnSelectClient"
@@ -154,7 +155,9 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp">
+            android:padding="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/resumenPayCashValue"
+            app:layout_constraintStart_toStartOf="@+id/resumenPayCashValue">
 
             <TextView
                 android:id="@+id/resumenPayMethodText"
@@ -162,7 +165,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/new_invoice_pay_method"
-                android:textColor="@color/colorPrimary" />
+                android:textColor="@color/colorPrimary"
+                tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/resumenPayMethodValue"
@@ -173,7 +177,8 @@
                 android:gravity="end"
                 app:layout_constraintLeft_toRightOf="@id/resumenPayMethodText"
                 app:layout_constraintRight_toRightOf="parent"
-                tools:text="Efectivo" />
+                tools:text="Efectivo"
+                tools:ignore="MissingConstraints" />
 
             <!-- Pagos en efectivo -->
             <TextView
@@ -306,8 +311,8 @@
                 style="@style/TextAppearance.AppCompat.Body1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
                 android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
                 android:text="@string/payment_credit_deposit"
                 android:textColor="@color/colorPrimary"
                 android:visibility="gone"

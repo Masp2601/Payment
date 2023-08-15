@@ -28,7 +28,7 @@
     <EditText
         android:id="@+id/reportSince"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:inputType="text"
         app:layout_constraintTop_toBottomOf="@id/reportTitleSince"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -46,7 +46,7 @@
     <EditText
         android:id="@+id/reportEnd"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:inputType="text"
         app:layout_constraintTop_toBottomOf="@id/reportTitleEnd"
         app:layout_constraintRight_toRightOf="parent"

@@ -15,6 +15,7 @@
         android:padding="10dp">
 
         <androidx.appcompat.widget.Toolbar
+            app:layout_constraintTop_toTopOf="parent"
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -27,6 +28,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Cliente" />
         <TextView
+            app:layout_constraintStart_toStartOf="parent"
             android:id="@+id/clientePhoneText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -42,6 +44,7 @@
             android:layout_marginStart="5dp"
             tools:text="3214239412"/>
         <TextView
+            app:layout_constraintStart_toStartOf="parent"
             android:id="@+id/clienteNitText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
