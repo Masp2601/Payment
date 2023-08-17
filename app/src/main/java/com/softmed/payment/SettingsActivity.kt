@@ -164,7 +164,7 @@ class SettingsActivity : AppCompatPreferenceActivity() {
                         if (index >= 0)
                             preference.entries[index]
                         else
-                            null)
+                            preference.entries[index])
 
             } else {
                 // For all other preferences, set the summary to the value's

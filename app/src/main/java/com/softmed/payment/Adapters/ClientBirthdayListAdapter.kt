@@ -1,6 +1,7 @@
 package com.softmed.payment.adapters
 
 import android.content.Context
+import android.graphics.Color
 import androidx.core.content.ContextCompat
 import androidx.appcompat.app.AppCompatActivity
 import android.view.LayoutInflater
@@ -29,6 +30,7 @@ class ClientBirthdayListAdapter (val activity: AppCompatActivity, private val cl
 
         val age = view?.findViewById<TextView>(R.id.clientAgeText)
         age?.text = jsonObject.get(BaseActivity.BIRTHDAY_JSON_AGE).toString()
+        age?.setTextColor(Color.parseColor("#ff0000"))
 
         val monthDay = view?.findViewById<TextView>(R.id.clientMonthDayText)
         val monthDayText = jsonObject.get(BaseActivity.BIRTHDAY_JSON_MONTH_DAY).toString()

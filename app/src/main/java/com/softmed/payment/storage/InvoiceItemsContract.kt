@@ -47,7 +47,7 @@ class InvoiceItemsContract {
             var itemPriceTotal: Double = 0.0,
             var itemIvaTotal: Double = 0.0,
             var itemDiscountTotal: Double = 0.0,
-            var itemAmountTotal: Double = 0.0 ) : Parcelable
+            var itemAmountTotal: Double = 0.0) : Parcelable
 
 
 }

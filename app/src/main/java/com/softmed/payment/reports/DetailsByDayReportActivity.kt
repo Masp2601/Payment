@@ -121,8 +121,8 @@ class DetailsByDayReportActivity : BaseActivity() {
                     .getResumenItemSoldByDate(calendarSince.timeInMillis, end.timeInMillis)
 
             uiThread {
-                val totalItems = resumen?.sumByDouble { it.itemAmountTotal } ?: 0.0
-                val totalPaid = resumen?.sumByDouble { it.itemPriceTotal } ?: 0.0
+                val totalItems = resumen?.sumOf { it.itemAmountTotal } ?: 0
+                val totalPaid = resumen?.sumOf { it.itemPriceTotal } ?: 0.0
                 reportTotalOfItems.text = "$totalItems"
                 reportTotalPaid.setText(totalPaid)
 
